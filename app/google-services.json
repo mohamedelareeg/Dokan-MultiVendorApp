@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "163041344157",
+    "firebase_url": "https://el-dokan-66d46.firebaseio.com",
+    "project_id": "el-dokan-66d46",
+    "storage_bucket": "el-dokan-66d46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163041344157:android:8c5c0b1d90ab72479fb274",
+        "android_client_info": {
+          "package_name": "com.mohaa.eldokan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163041344157-0ffihr2r5t53pe1f63kgjrmu2s3gr3ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mohaa.eldokan",
+            "certificate_hash": "cbef661cf4b1dc2e7cb0ea5c9bac0d3b4ce89768"
+          }
+        },
+        {
+          "client_id": "163041344157-3q19kil4flijhhamdgfj3du3fv00aeer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiI4cgB6G3G-fB5Md9oil-fMk-_B2z3do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163041344157-3q19kil4flijhhamdgfj3du3fv00aeer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

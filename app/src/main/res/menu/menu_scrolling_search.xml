@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.krislarson.collapsingimage.ScrollingActivity">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        app:actionViewClass="android.widget.SearchView"
+        
+        app:showAsAction="ifRoom" />
+
+</menu>
+
+

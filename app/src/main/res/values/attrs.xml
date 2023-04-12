@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MultiSnapRecyclerView">
+        <attr name="msrv_gravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="start" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="msrv_interval" format="integer" />
+        <attr name="msrv_speed_ms_per_inch" format="float" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView_">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shadow" format="boolean" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ScalingLayout">
+        <attr name="radiusFactor" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="multi_line_radio_group">
+        <attr name="max_in_row" format="integer" />
+        <attr name="radio_buttons" format="reference" />
+        <attr name="default_button" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandText" format="string" />
+        <attr name="collapseText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="timeline_style" >
+        <attr name="marker" format="color|reference"/>
+        <attr name="line" format="color|reference"/>
+        <attr name="markerSize" format="dimension"/>
+        <attr name="lineSize" format="dimension"/>
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="linePadding" format="dimension"/>
+        <attr name="markerInCenter" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSearchBar">
+        //Base
+        <attr name="mt_speechMode" format="boolean"/>
+        <attr name="mt_maxSuggestionsCount" format="integer"/>
+        <attr name="mt_navIconEnabled" format="boolean"/>
+        <attr name="mt_roundedSearchBarEnabled" format="boolean"/> //(API 21+ , Will Revert To Default Shape On Lower
+        <attr name="mt_menuDividerEnabled" format="boolean"/>
+        <attr name="mt_dividerColor" format="color"/>
+        <attr name="mt_searchBarColor" format="color"/>
+
+        //Icons
+        <attr name="mt_menuIconDrawable" format="reference"/>
+        <attr name="mt_searchIconDrawable" format="reference"/>
+        <attr name="mt_speechIconDrawable" format="reference"/>
+        <attr name="mt_backIconDrawable" format="reference"/>
+        <attr name="mt_clearIconDrawable" format="reference"/>
+        <attr name="mt_navIconTint" format="color"/>
+        <attr name="mt_menuIconTint" format="color"/>
+        <attr name="mt_searchIconTint" format="color"/>
+        <attr name="mt_backIconTint" format="color"/>
+        <attr name="mt_clearIconTint" format="color"/>
+        <attr name="mt_navIconUseTint" format="boolean"/>
+        <attr name="mt_menuIconUseTint" format="boolean"/>
+        <attr name="mt_searchIconUseTint" format="boolean"/>
+        <attr name="mt_backIconUseTint" format="boolean"/>
+        <attr name="mt_clearIconUseTint" format="boolean"/>
+        <attr name="mt_borderlessRippleEnabled" format="boolean"/>
+
+        //Text
+        <attr name="mt_hint" format="string"/>
+        <attr name="mt_placeholder" format="string"/>
+        <attr name="mt_textColor" format="color"/>
+        <attr name="mt_hintColor" format="color"/>
+        <attr name="mt_placeholderColor" format="color"/>
+        <attr name="mt_textCursorTint" format="color"/>
+        <attr name="mt_leftTextSelectorDrawable" format="reference"/>
+        <attr name="mt_middleTextSelectorDrawable" format="reference"/>
+        <attr name="mt_rightTextSelectorDrawable" format="reference"/>
+        <attr name="mt_leftTextSelectorTint" format="color"/>
+        <attr name="mt_middleTextSelectorTint" format="color"/>
+        <attr name="mt_rightTextSelectorTint" format="color"/>
+        <attr name="mt_handlesTintEnabled" format="boolean"/>
+        <attr name="mt_highlightedTextColor" format="color"/>
+    </declare-styleable>
+</resources>

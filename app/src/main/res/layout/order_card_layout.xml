@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/order_panel"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:elevation="3dp">
+
+    <ImageView
+        android:src="@mipmap/ic_logo"
+        android:id="@+id/imagenotileft"
+        android:layout_width="50dp"
+        android:padding="10dip"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="@string/loading"
+        android:id="@+id/OrderOwner"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imagenotileft"
+        android:layout_toEndOf="@+id/imagenotileft"
+        android:textColor="#060606" />
+
+    <TextView
+        android:text="@string/loading"
+        android:id="@+id/OrderTime"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrderOwner"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/imagenotileft"
+        android:layout_toEndOf="@+id/imagenotileft"/>
+
+</RelativeLayout>

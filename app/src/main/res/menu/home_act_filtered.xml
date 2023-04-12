@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:retailstore="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/ic_menu_animated"
+        android:orderInCategory="1"
+        android:title="@string/cart"
+        retailstore:showAsAction="always" />
+
+</menu>

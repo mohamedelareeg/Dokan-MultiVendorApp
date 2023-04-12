@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e67e22</color>
+    <color name="colorPrimaryDark">@color/gradient_background</color>
+    <color name="colorPrimaryWhite">@color/gradient_background_white</color>
+    <color name="colorPrimaryDark_Alt">#d35400</color>
+
+    <color name="colorAccent">#e91e02</color>
+
+    <color name="colorPrimary_">#071C24</color>
+    <color name="colorPrimaryDark_">#06151b</color>
+    <color name="colorAccent_">#00D474</color>
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <color name="gen_black">#000000</color>
+    <color name="gen_white">#FFFFFF</color>
+    <color name="black_trans80">#33000000</color>
+    <color name="scarletRed">#e91e02</color>
+    <color name="titleTextColor">#D9141627</color>
+    <color name="darkTransparentBlack">#ca000000</color>
+    <color name="darkerGrey">#787878</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#3498db</color>
+    <color name="bg_screen2">#e74c3c</color>
+    <color name="bg_screen3">#9b59b6</color>
+    <color name="bg_screen4">#1abc9c</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#2980b9</color>
+    <color name="dot_dark_screen2">#c0392b</color>
+    <color name="dot_dark_screen3">#8e44ad</color>
+    <color name="dot_dark_screen4">#27ae60</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#6a89cc</color>
+    <color name="dot_light_screen2">#e55039</color>
+    <color name="dot_light_screen3">#82ccdd</color>
+    <color name="dot_light_screen4">#38ada9</color>
+    <color name="lightgreen">#00ff00</color>
+    <color name="SemiTransparentWhite">#b9ffffff</color>
+    <color name="transparentWhite">#00ffffff</color>
+
+
+    <color name="primary_dark_text">#28333D</color>
+    <color name="secondary_text">#434343</color>
+    <color name="secondary_light">#979797</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+
+    <color name="highlight_text">#17a1d7</color>
+    <color name="color_gray_green">#375730</color>
+    <color name="background_green_image_tint">#613C5730</color>
+    <color name="gradient_2">#3e3e3e</color>
+    <color name="border_remove_item">@color/colorPrimaryDark_Alt</color>
+    <color name="border">#f1f5f7</color>
+    <color name="stroke">#e0e3e4</color>
+    <color name="sort_bar_background">#333333</color>
+    <color name="sort_bar_divider">#5c5c5c</color>
+    <color name="primaryText">#de000000</color>
+    <color name="tertiaryText">#61000000</color>
+    <color name="navi_primary">#795548</color>
+    <color name="navi_primary_dark">#504037</color>
+    <color name="navi__dark_grey">#6c6c6c</color>
+    <color name="colorPrimaryTransparent">#CC000000</color>
+    <color name="colorBackgroundDark">#FFE6E6E6</color>
+    <color name="textColorSecondary">#FF8B8B8B</color>
+    <color name="textColorPrimary">#FF000000</color>
+
+
+    <color name="MD_Orange">#ff9800</color>
+    <color name="MD_Orange_300">#ffb74d</color>
+    <color name="MD_Purple_700">#7b1fa2</color>
+
+    <!-- Red -->
+    <color name="MD_Red">#f44336</color>
+    <color name="MD_Red_300">#e57373</color>
+    <color name="MD_Red_A700">#d50000</color>
+
+    <!-- Blue -->
+    <color name="MD_LightBlue">#03a9f4</color>
+    <color name="MD_LightBlue_300">#4fc3f7</color>
+    <color name="MD_LightBlue_700">#0288d1</color>
+    <color name="MD_LightBlue_800">#0277bd</color>
+    <color name="MD_LightBlue_900">#01579b</color>
+
+    <!-- Grey -->
+    <color name="MD_Grey_300">#e0e0e0</color>
+    <color name="MD_Grey_700">#616161</color>
+    <color name="MD_Grey_800">#424242</color>
+
+    <!-- Yellow -->
+    <color name="MD_Amber">#ffc107</color>
+    <color name="MD_Amber_300">#ffd54f</color>
+    <color name="MD_Yellow">#ffeb3b</color>
+    <color name="MD_Yellow_700">#fbc02d</color>
+
+    <!-- Green -->
+    <color name="MD_Green">#4caf50</color>
+    <color name="MD_LightGreen">#8bc34a</color>
+    <color name="MD_LightGreen_300">#aed581</color>
+    <color name="MD_LightGreen_700">#689f38</color>
+
+    //Material SearchBar Light Theme Colors
+    <color name="searchBarIconColor">#3a3a3a</color>
+    //Base
+    <color name="searchBarPrimaryColor">#FFFFFF</color>
+    <color name="searchBarCursorColor">#8000a1ff</color>
+    <color name="searchBarDividerColor">#1F000000</color>
+
+    //Icons
+    <color name="searchBarNavIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarMenuIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarSearchIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarClearIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarBackIconTintColor">@color/searchBarIconColor</color>
+
+    //Text
+    <color name="searchBarTextColor">#DE000000</color>
+    <color name="searchBarHintColor">#42000000</color>
+    <color name="searchBarPlaceholderColor">#8A000000</color>
+    <color name="searchBarTextHighlightColor">#8000a1ff</color>
+
+    //Base
+    <color name="searchBarPrimaryColorDark">#303030</color>
+    <color name="searchBarDividerColorDark">#1FFFFFFF</color>
+
+    //Material SearchBar Dark Theme Colors
+    <color name="searchBarIconColorDark">#00a1ff</color>
+    //Icons
+    <color name="searchBarNavIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarMenuIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarSearchIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarClearIconTintColorDark">@color/searchBarIconColorDark</color>
+    <color name="searchBarBackIconTintColorDark">@color/searchBarIconColorDark</color>
+
+    //Text
+    <color name="searchBarTextColorDark">#DEFFFFFF</color>
+    <color name="searchBarHintColorDark">#42FFFFFF</color>
+    <color name="searchBarPlaceholderColorDark">#8AFFFFFF</color>
+    <color name="searchBarTextHighlightColorDark">#BF00a1ff</color>
+    <color name="transparentBlack">#96000000</color>
+</resources>

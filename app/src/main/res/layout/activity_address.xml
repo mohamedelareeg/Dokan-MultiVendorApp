@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/stats"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_cart" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/activity_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <FrameLayout
+
+
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.5">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+
+
+                android:id="@+id/shoppingCartRecycleView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scrollbars="vertical">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_margin="50dp"
+        android:layout_below="@+id/activity_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_add_address"
+        android:text="@string/add_a_new_address"
+        style="@style/AppTheme.RoundedCornerMaterialButtonDark"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        android:background="@color/colorPrimaryDark_Alt"
+        android:text="@string/continue_shopping"
+        android:elevation="40dp"
+        android:textSize="24sp"
+        android:textColor="@color/gen_white"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+</RelativeLayout>

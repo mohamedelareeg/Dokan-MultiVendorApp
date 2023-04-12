@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="radio_buttons">
+        <item>داخل المدينة</item>
+        <item>قرية مجاورة</item>
+        <item>مدينة اخرى</item>
+    </string-array>
+
+    <string-array name="examples">
+        <item>@string/different_fields</item>
+        <item>@string/fast_turnaround</item>
+        <item>@string/prices</item>
+        <item>@string/wide_range_produts</item>
+        <item>@string/unique_products</item>
+        <item>@string/stylish_items</item>
+    </string-array>
+
+    <string-array name="examples_return">
+        <item>@string/free_return</item>
+        <item>@string/cash_on_delivery</item>
+
+    </string-array>
+
+    <string-array name="Trader_type">
+        <item>Grocery</item>
+        <item>Clothing Shop</item>
+        <item>Baby</item>
+        <item>Mobiles</item>
+        <item>Electronic Shop</item>
+        <item>House Devices</item>
+        <item>Beauty Shop</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="Ads_type">
+        <item>product</item>
+        <item>link</item>
+    </string-array>
+    <string-array name="examples_shop">
+        <item>@string/signup_free</item>
+        <item>@string/publish_your_p</item>
+        <item>@string/icrease_your_profit</item>
+        <item>@string/publish_your_products</item>
+
+    </string-array>
+    <string-array name="examples_notification">
+        <item>Traders</item>
+        <item>Members</item>
+        <item>Customers</item>
+
+
+    </string-array>
+    <string-array name="examples_Used">
+        <item>Your Phone</item>
+        <item>Your Car</item>
+        <item>Your House</item>
+        <item>EveryThing</item>
+
+    </string-array>
+    <string-array name="Order_type">
+        <item>confirmed</item>
+        <item>packed</item>
+        <item>delivered</item>
+        <item>warning</item>
+        <item>cancel</item>
+    </string-array>
+
+    <string-array name="diplay_type">
+        <item>LCD</item>
+        <item>IPS-LCD</item>
+        <item>OLED</item>
+        <item>AMOLED</item>
+    </string-array>
+
+    <string-array name="momery_type">
+        <item>256MB</item>
+        <item>512MB</item>
+        <item>1GB</item>
+        <item>1.5GB</item>
+        <item>2GB</item>
+        <item>3GB</item>
+        <item>4GB</item>
+        <item>6GB</item>
+        <item>8GB</item>
+        <item>10GB</item>
+        <item>12GB</item>
+        <item>14GB</item>
+        <item>16GB</item>
+        <item>32GB</item>
+    </string-array>
+
+    <string-array name="storage_type">
+        <item>4GB</item>
+        <item>8GB</item>
+        <item>16GB</item>
+        <item>32GB</item>
+        <item>64GB</item>
+        <item>128GB</item>
+        <item>256GB</item>
+        <item>512GB</item>
+        <item>750GB</item>
+        <item>1TB</item>
+        <item>2TB</item>
+        <item>3TB</item>
+        <item>4TB</item>
+        <item>6TB</item>
+        <item>8TB</item>
+    </string-array>
+
+    <string-array name="department_type">
+        <item>Men</item>
+        <item>Woman</item>
+        <item>Unisex</item>
+    </string-array>
+
+    <string-array name="ocasion_type">
+        <item>Casual</item>
+        <item>Sport</item>
+        <item>Formal</item>
+    </string-array>
+    <string-array name="material_clothes_type">
+        <item>Cotton</item>
+        <item>Cotton Blend</item>
+        <item>Combination</item>
+        <item>Polyester</item>
+        <item>Acrylic</item>
+        <item>Polyester Blend</item>
+        <item>Viscose Blend</item>
+        <item>Leather</item>
+        <item>Acrylic Blend</item>
+        <item>Jersey</item>
+        <item>Linen</item>
+        <item>Denim</item>
+        <item>Nylon Blend</item>
+        <item>Wool Blend</item>
+        <item>Polyamide Blend</item>
+        <item>Fabric</item>
+        <item>Linen Blend</item>
+        <item>Lycra</item>
+        <item>Velvet</item>
+    </string-array>
+    <string-array name="material_home_type">
+        <item>Plastic</item>
+        <item>Stanless Steel</item>
+        <item>ABS</item>
+        <item>Metal</item>
+        <item>Aluminum</item>
+    </string-array>
+
+
+    <string-array name="clothes_categories">
+        <item>SHOES|BOOTS</item>
+        <item>JACKETS|COATS</item>
+        <item>TOPS|HOODIES</item>
+        <item>WATCHES</item>
+        <item>PANTS|DENIM</item>
+        <item>LUGGAGE</item>
+        <item>ACCESSORIES</item>
+        <item>EYEWEAR</item>
+    </string-array>
+    <string-array name="mobiles_categories">
+        <item>SMART PHONES</item>
+        <item>TABLETS</item>
+        <item>MOBILE ACCESSORIES</item>
+    </string-array>
+
+    <string-array name="grocery_categories">
+        <item>Fresh Vegetables|Fruits</item>
+        <item>Meat|Seafood</item>
+        <item>Frozen Foods</item>
+        <item>DRIED BEANS, GRAINS|RICE</item>
+        <item>Beverages</item>
+        <item>Paper Products</item>
+        <item>Cleaning</item>
+        <item>Gifts</item>
+        <item>Flowers</item>
+    </string-array>
+
+    <string-array name="mobiles_brands">
+        <item>SAMSUNG</item>
+        <item>APPLE</item>
+        <item>XIAOMI</item>
+        <item>GOOGLE</item>
+        <item>LG</item>
+        <item>HONOR</item>
+        <item>REALME</item>
+        <item>OPPO</item>
+        <item>SONY</item>
+        <item>HUWAEI</item>
+        <item>LENOVO</item>
+        <item>LAVA</item>
+        <item>VIVO</item>
+        <item>INFINIX</item>
+        <item>ASUS</item>
+        <item>SICO</item>
+        <item>MEIZO</item>
+        <item>XTOUCH</item>
+        <item>NOKIA</item>
+        <item>BLACKBERRY</item>
+        <item>HTC</item>
+        <item>MOTOROLA</item>
+        <item>HISENSE</item>
+        <item>ALCATEL</item>
+        <item>GTIDE</item>
+        <item>MICROSOFT</item>
+        <item>ARCHOS</item>
+        <item>ZTE</item>
+        <item>ONEPLUS</item>
+        <item>VODAFONE</item>
+        <item>ORANGE</item>
+        <item>MTOUCH</item>
+        <item>ZEN</item>
+        <item>BENQ</item>
+        <item>MICROMAX</item>
+        <item>INNJOO</item>
+        <item>OTHERS</item>
+    </string-array>
+
+    <string-array name="electronics_categories">
+        <item>TELEVISIONS</item>
+        <item>LAPTOPS|DESKTOPS</item>
+        <item>MONITORS</item>
+        <item>CAMERA|ACCESSORIES</item>
+        <item>ROUTERS|NETWORKING</item>
+        <item>HEADPHONES|SPEACKERS</item>
+        <item>DRIVERS|STORAGE</item>
+        <item>COMPUTER COMPONENTS</item>
+    </string-array>
+    <string-array name="beauty_categories">
+        <item>BEAUTY|PERSONAL CARE</item>
+        <item>HEALTH CARE</item>
+        <item>ORAL CARE</item>
+        <item>PERSONAL CARE</item>
+        <item>MAKEUP</item>
+        <item>HAIR CARE</item>
+        <item>MEDICAL SUPPLIES|EQUIPMENT</item>
+    </string-array>
+    <string-array name="baby_categories">
+        <item>DIAPERING</item>
+        <item>TOYS|GAMES</item>
+        <item>BABY FEEDING</item>
+        <item>NURSERY</item>
+        <item>HEALTH|BABY CARE</item>
+        <item>BABY SAFETY</item>
+        <item>STROLLERS|ACCESSORIES</item>
+        <item>Clothing</item>
+        <item>BABY|TODDLER TOYS</item>
+        <item>BATH|SKIN CARE</item>
+    </string-array>
+    <string-array name="home_categories">
+        <item>Home Appliances</item>
+        <item>Kitchen Appliances</item>
+        <item>Large Appliances</item>
+        <item>Home Improvements</item>
+        <item>Cookers</item>
+        <item>Furniture|Decor</item>
+        <item>Bathroom Products</item>
+        <item>Bedroom Furniture</item>
+        <item>Home Accessories</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>ألقاهرة</item>
+        <item>الجيزة</item>
+        <item>القليوبية</item>
+        <item>الاسكندرية</item>
+        <item>الدقهلية</item>
+        <item>البحر الاحمر</item>
+        <item>البحيرة</item>
+        <item>الفيوم</item>
+        <item>الغربية</item>
+        <item>الإسماعيلية</item>
+        <item>المنوفية</item>
+        <item>المنيا</item>
+        <item>الوادى الجديد</item>
+        <item>السويس</item>
+        <item>اسوان</item>
+        <item>اسيوط</item>
+        <item>بنى سويف</item>
+        <item>بورسعيد</item>
+        <item>دمياط</item>
+        <item>الشرقية</item>
+        <item>جنوب سينا</item>
+        <item>كفر الشيخ</item>
+        <item>مطروح</item>
+        <item>الاقصر</item>
+        <item>قنا</item>
+        <item>شمال سينا</item>
+        <item>سوهاج</item>
+    </string-array>
+
+
+
+
+</resources>

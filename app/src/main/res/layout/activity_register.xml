@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/gradient_background"
+    tools:context=".Auth.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="45sp"
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/app_name"
+            android:layout_marginBottom="20dp"
+           />
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/white"
+            app:met_clearButton="true"
+            app:met_primaryColor="@color/white"
+            app:met_errorColor="@color/red_600"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"
+            app:met_floatingLabel="highlight"
+
+            app:met_baseColor="@color/white"
+            app:met_errorColor="@color/red_600"
+            app:met_primaryColor="@color/white"
+            app:met_clearButton="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+
+            app:met_floatingLabel="highlight"
+            android:inputType="textPassword"
+            app:met_errorColor="@color/red_600"
+            app:met_baseColor="@color/white"
+            app:met_primaryColor="@color/white"
+            app:met_clearButton="true"/>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/register"
+                android:text="@string/register"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:textSize="15sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/login_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/fonts"
+                android:text="@string/login_now"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

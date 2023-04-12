@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/stats"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_cart" />
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/owner_name"
+            android:maxLines="1"
+            android:maxLength="32"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:enabled="false"
+
+            app:met_floatingLabel="highlight" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_goverment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/goverment"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:maxLength="64"
+            app:met_floatingLabel="highlight"
+            android:enabled="false"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:maxLength="64"
+            app:met_floatingLabel="highlight"
+            android:enabled="false"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:maxLength="64"
+            app:met_floatingLabel="highlight"
+            android:enabled="false"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/order_time"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:maxLength="64"
+            app:met_floatingLabel="highlight"
+            android:enabled="false"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_cost"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:maxLength="64"
+            app:met_floatingLabel="highlight"
+            android:enabled="false"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/state"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <AutoCompleteTextView
+                android:layout_weight="1"
+                android:id="@+id/trader_type"
+                android:enabled="false"
+                android:layout_width="0dp"
+                android:layout_height= "wrap_content"/>
+            <Spinner
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:id="@+id/spinner_ip"
+                android:spinnerMode="dropdown"
+                android:entries="@array/Order_type"/>
+
+
+
+        </LinearLayout>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/order_Massege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_info"
+            app:met_primaryColor="@color/colorPrimaryDark_Alt"
+            android:maxLength="64"
+            app:met_floatingLabel="highlight"
+            android:visibility="gone"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/order_info"
+        android:id="@+id/activity_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9.5">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shoppingCartRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </FrameLayout>
+
+        <TextView android:id="@+id/text_action_bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimaryDark_Alt"
+            android:text="@string/send_notification"
+            android:elevation="40dp"
+            android:textSize="14sp"
+            android:textColor="@color/gen_white"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

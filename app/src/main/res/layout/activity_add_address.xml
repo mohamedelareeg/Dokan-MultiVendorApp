@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_item_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Controllers.activities_traders.AddTraderActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_address" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView android:id="@+id/scrollbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:scrollbars="none"
+      >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gradient_background">
+                    <com.rengwuxian.materialedittext.MaterialEditText
+
+                        android:id="@+id/customer_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mobile_number"
+                        android:maxLength="11"
+                        app:met_iconLeft="@android:drawable/stat_sys_phone_call"
+                        app:met_floatingLabel="highlight"
+                        app:met_baseColor="@color/white"
+                        app:met_errorColor="@color/red_600"
+                        app:met_clearButton="true"
+                        app:met_primaryColor="@color/white"
+                        android:inputType="number" />
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/goverment"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/background_dark"/>
+
+                    <AutoCompleteTextView
+                        android:layout_weight="1"
+                        android:id="@+id/goverment_ip"
+                        android:enabled="false"
+                        android:layout_width="0dp"
+                        android:textColor="@color/black"
+                        android:layout_height= "wrap_content"/>
+                    <Spinner
+                        android:textColor="@color/black"
+
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/spinner_goverment_ip"
+                        android:spinnerMode="dropdown"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gradient_background">
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/customer_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/address"
+                        android:maxLength="64"
+                        android:maxLines="3"
+                        app:met_iconLeft="@drawable/ic_home_grey600_24dp"
+                        app:met_floatingLabel="highlight"
+                        app:met_baseColor="@color/white"
+                        app:met_errorColor="@color/red_600"
+                        app:met_clearButton="true"
+                        app:met_primaryColor="@color/white"
+
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

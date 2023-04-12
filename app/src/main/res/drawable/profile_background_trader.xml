@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorPrimaryDark_Alt"/>
+
+
+    <item android:top="165dp"
+        android:bottom="-165dp"
+        android:left="0dp"
+        android:right="-165dp">
+        <rotate
+            android:fromDegrees="-10"
+            android:pivotX="0%"
+            android:pivotY="100%">
+            <shape
+                android:shape="rectangle">
+                <solid
+                    android:color="@color/white"
+                    tools:targetApi="lollipop" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

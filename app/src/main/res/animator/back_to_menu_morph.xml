@@ -1,0 +1,8 @@
+<!--Morph From Back To Menu -->
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/icon_animation_duration"
+    android:propertyName="pathData"
+    android:valueFrom="M50 25,L80 50,M20 50,L80 50,M50 75,L80 50"
+    android:valueTo="M20 30,L80 30,M20 50,L80 50,M20 70,L80 70"
+    android:valueType="pathType"/>

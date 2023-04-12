@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_item_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Controllers.activities_traders.AddTraderActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_cart" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:scrollbars="none"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/trader_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/drawerback"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/trader_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_name"
+                    android:maxLines="1"
+                    android:maxLength="32"
+                    app:met_primaryColor="@color/colorPrimaryDark_Alt"
+
+                    app:met_floatingLabel="highlight" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/trader_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_desc"
+                    app:met_primaryColor="@color/colorPrimaryDark_Alt"
+                    android:maxLength="64"
+                    app:met_floatingLabel="highlight" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/trader_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_phone"
+                    app:met_primaryColor="@color/colorPrimaryDark_Alt"
+                    android:inputType="number"
+                    app:met_floatingLabel="highlight" />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/trader_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_location"
+                    app:met_primaryColor="@color/colorPrimaryDark_Alt"
+                    android:maxLength="64"
+                    app:met_floatingLabel="highlight" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/trader_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_promo_code"
+                    app:met_primaryColor="@color/colorPrimaryDark_Alt"
+                    android:text="Dokan"
+                    app:met_floatingLabel="highlight"
+                    android:maxLines="1"
+                    android:maxLength="18"
+                    />
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/trader_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_disc"
+                    app:met_primaryColor="@color/colorPrimaryDark_Alt"
+                    android:text="5"
+                    android:inputType="number"
+                    app:met_floatingLabel="highlight" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/category"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <AutoCompleteTextView
+                    android:layout_weight="1"
+                    android:id="@+id/trader_type"
+                    android:enabled="false"
+                    android:layout_width="0dp"
+                    android:layout_height= "wrap_content"/>
+                <Spinner
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/spinner_ip"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Trader_type"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/categort_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview_selected_contacts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/selected_contacts_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/padding_x_small"
+                                android:text="@string/activity_add_Catagories_to_Menu"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/selected_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp">
+
+
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/trader_cata_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/enter_categories"
+                        app:met_primaryColor="@color/colorPrimaryDark_Alt"
+                        android:maxLines="1"
+                        android:maxLength="18"
+                        app:met_floatingLabel="highlight" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp">
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/add_to_list"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimaryDark_Alt"
+                        android:text="@string/add_categories"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/gen_white"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/grey_300"
+                android:layout_marginTop="8dp"/>
+
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/grey_300"
+                android:layout_marginTop="8dp"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:elevation="30dp"
+        android:background="@color/gen_black">
+
+
+
+        <TextView
+            android:id="@+id/add_to_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark_Alt"
+            android:text="@string/add_shop"
+            android:textSize="14sp"
+            android:textColor="@color/gen_white"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>

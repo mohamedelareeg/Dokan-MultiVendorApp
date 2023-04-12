@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mohaa.eldokan">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name=".ELDokan"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Auth.PhoneAuthActivity"></activity>
+        <activity android:name=".Controllers.activities_popup.ChartsActivity" />
+        <activity android:name=".Auth.VerificationCodeActivity" />
+        <activity android:name=".Auth.PhoneNumberActivity" />
+        <activity android:name=".Controllers.SplashActivity" />
+        <activity android:name=".Controllers.activities_popup.ProfileEditActivity" />
+        <activity android:name=".Controllers.activities_popup.SearchActivity" />
+        <activity android:name=".Controllers.activities_cart.CartReadyActivity" />
+        <activity android:name=".Controllers.activites_order.OrderFailureActivity" />
+        <activity android:name=".Controllers.activites_order.OrderSuccessActivity" />
+        <activity android:name=".Controllers.activities_traders.ProductsManagmentActivity" />
+        <activity android:name=".Controllers.activities_dashboard.TrackOrdersActivity">
+            <intent-filter>
+                <action android:name="com.google.firebase.NotificationAdminTarget" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Controllers.activities_dashboard.DashboardActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service android:name=".services.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".services.FCM_Messaging_Service_Admin">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Auth.LoginActivity" />
+        <activity android:name=".Controllers.BaseActivity" />
+        <activity android:name=".Controllers.activities_traders.AddTraderActivity" />
+        <activity android:name=".Controllers.activities_products.ProductsActivity" />
+        <activity android:name=".Controllers.activities_products.AddProductActivity" />
+        <activity android:name=".Controllers.activities_home.ReplyActivity" />
+        <activity android:name=".Controllers.activities_traders.ExpandableActivity" />
+        <activity android:name=".Controllers.activities_cart.CartActivity" />
+        <activity android:name=".Controllers.activites_order.OrderDetailsActivity" />
+        <activity android:name=".Controllers.activities_popup.ImagePopupDetailsActivity" />
+        <activity android:name=".Controllers.activities_products.IndividualProductActivity" />
+        <activity android:name=".Controllers.activities_dashboard.SingleOrderActivity" />
+        <activity android:name=".Controllers.activites_order.TrackActivity">
+            <intent-filter>
+                <action android:name="com.google.firebase.NotificationOrderTarget" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Controllers.activities_traders.EditTraderActivity" />
+        <activity android:name=".Controllers.activities_products.EditProductActivity" />
+        <activity android:name=".Controllers.activities_products.ProductsEditActivity" />
+        <activity android:name=".Controllers.activities_home.AddAdsActivity" />
+        <activity android:name=".Controllers.activities_products.ProductsTraderActivity" />
+        <activity android:name=".Controllers.activities_products.ProductsCataActivity" />
+        <activity android:name=".Controllers.activities_products.ProductsSCataActivity" />
+        <activity android:name=".Controllers.activities_home.AddressActivity" />
+        <activity android:name=".Controllers.activities_home.AddAddressActivity" />
+        <activity android:name=".Auth.RegisterActivity" />
+        <activity android:name=".Controllers.activities_home.AddSpecAdsActivity" />
+        <activity android:name=".Controllers.activities_home.AddSpecPromoActivity" />
+        <activity android:name=".Auth.PhoneRegisterActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>
